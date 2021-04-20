@@ -18,7 +18,7 @@ const UserProfile = () => {
         const authUserProfile = async () => {
             try{
                 const res = await axios({
-                    url:`${process.env.REACT_APP_URL}/about`,
+                    url:`/about`,
                     validateStatus: function (status) {
                         return status < 500; 
                     },

@@ -45,7 +45,7 @@ const Login = () => {
 
         try{
             const res = await axios({
-               url:`${process.env.REACT_APP_URL}/login`,
+               url:`/login`,
                validateStatus: function (status) {
                    return status < 500; 
                  },
@@ -79,7 +79,7 @@ const Login = () => {
 
        try{
          const res = await axios({
-            url:`${process.env.REACT_APP_URL}/register`,
+            url:`/register`,
             validateStatus: function (status) {
                 return status < 500; 
               },

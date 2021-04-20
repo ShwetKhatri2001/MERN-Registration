@@ -15,7 +15,7 @@ const Activate = () => {
 
         try{
             const res = await axios({
-               url:`${process.env.REACT_APP_URL}/activate`,
+               url:`/activate`,
                validateStatus: function (status) {
                    return status < 500; 
                  },

@@ -14,7 +14,7 @@ const Logout = () => {
         const logoutUser = async () => {
             try{
                 const res = await axios({
-                    url:`${process.env.REACT_APP_URL}/logout`,
+                    url:`/logout`,
                     validateStatus: function (status) {
                         return status < 500; 
                     },

@@ -13,7 +13,7 @@ const ForgotPass = () => {
 
     try{
       const res = await axios({
-         url:`${process.env.REACT_APP_URL}/forgotpass`,
+         url:`/forgotpass`,
          validateStatus: function (status) {
              return status < 500; 
            },

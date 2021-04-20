@@ -12,7 +12,7 @@ const LoginGoogle = () => {
 
    try{
     const res = await axios({
-      url:`${process.env.REACT_APP_URL}/googlelogin`,
+      url:`/googlelogin`,
       method: 'POST',
       validateStatus: function (status) {
         return status < 500; 

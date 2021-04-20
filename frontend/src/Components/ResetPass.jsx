@@ -27,7 +27,7 @@ const ResetPass = () => {
 
       try{
           const res = await axios({
-             url:`${process.env.REACT_APP_URL}/resetpass`,
+             url:`/resetpass`,
              validateStatus: function (status) {
                  return status < 500; 
                },

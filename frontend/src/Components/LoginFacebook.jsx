@@ -18,7 +18,7 @@ const LoginFacebook = () => {
 
  
     const res = await axios({
-      url:`${process.env.REACT_APP_URL}/facebooklogin`,
+      url:`/facebooklogin`,
       method: 'POST',
       validateStatus: function (status) {
         return status < 500; 

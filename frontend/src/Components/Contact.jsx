@@ -29,7 +29,7 @@ const Contact = () => {
         const authUserProfile = async () => {
             try{
                 const res = await axios({
-                    url:`${process.env.REACT_APP_URL}/contact`,
+                    url:`/contact`,
                     validateStatus: function (status) {
                         return status < 500; 
                     },
@@ -65,7 +65,7 @@ const Contact = () => {
 
         try{
             const res = await axios({
-               url:`${process.env.REACT_APP_URL}/contact`,
+               url:`/contact`,
                validateStatus: function (status) {
                    return status < 500; 
                  },
