@@ -43,8 +43,8 @@ const EditProfile= () => {
                 {   
                     const userInfo = res.data.authUser;
                     dispatch({type:'user', payload:true});
-                    setUserData({...userData,firstname:userInfo.firstname,lastname:userInfo.lastname,
-                        email:userInfo.email,phone:userInfo.phone,age:userInfo.age});
+                    setUserData({firstname:userInfo.firstname,lastname:userInfo.lastname,
+                        email:userInfo.email,phone:userInfo.phone,age:userInfo.age,gender:'Male'});
                 }
                 else if(res.data.errors || !res.data.authUser)
                 {

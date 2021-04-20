@@ -44,8 +44,8 @@ const Contact = () => {
                 if(res.data.authUser)
                 {   
                     dispatch({type:'user', payload:true});
-                    setUserData({...userData,firstname:res.data.authUser.firstname,
-                                lastname:res.data.authUser.lastname,email:res.data.authUser.email});
+                    setUserData({firstname:res.data.authUser.firstname,
+                                lastname:res.data.authUser.lastname,email:res.data.authUser.email,subject:'',message:''});
                 }
                 else if(res.data.errors || !res.data.authUser)
                 {
